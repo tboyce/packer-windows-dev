@@ -32,6 +32,30 @@
                     "{{.Name}}",
                     "--cpus",
                     "2"
+                ],
+                [
+                    "storagectl",
+                    "{{.Name}}",
+                    "--name",
+                    "SataController",
+                    "--add",
+                    "sata",
+                    "--controller",
+                    "IntelAHCI"
+                ],
+                [
+                    "storageattach",
+                    "{{.Name}}",
+                    "--storagectl",
+                    "SataController",
+                    "--port",
+                    "0",
+                    "--device",
+                    "0",
+                    "--type",
+                    "dvddrive",
+                    "--medium",
+                    "./iso/other/en_visual_studio_enterprise_2015_x86_x64_dvd_6850497.iso"
                 ]
             ]
         }
@@ -40,11 +64,6 @@
       {
           "type": "file",
           "source": "./config",
-          "destination": "/tmp"
-      },
-      {
-          "type": "file",
-          "source": "./iso/other",
           "destination": "/tmp"
       },
       {
@@ -57,34 +76,16 @@
                 "./scripts/misc-packages.bat"
             ]
         },
-      {
-            "type": "shell",
-            "remote_path": "/tmp/script.ps1",
-            "execute_command": "{{.Vars}} powershell -File c:/Windows/Temp/script.ps1",
-            "scripts": [
-              "./scripts/disable-updates.ps1",
-              "./scripts/remove-metro-apps.ps1",
-              "./scripts/vs.ps1"
-            ]
-        },
         {
-    "type": "shell",
-    "remote_path": "/tmp/script.bat",
-    "execute_command": "{{.Vars}} cmd /c c:/Windows/Temp/script.bat",
-    "scripts": [
-        "./scripts/compile-dotnet-assemblies.bat",
-        "./scripts/restart.bat"
-    ]
-},
-{
-    "type": "shell",
-    "remote_path": "/tmp/script.bat",
-    "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
-    "scripts": [
-        "./scripts/cleartemp.bat",
-        "./scripts/compact.bat"
-    ]
-}
+              "type": "shell",
+              "remote_path": "/tmp/script.ps1",
+              "execute_command": "{{.Vars}} powershell -File c:/Windows/Temp/script.ps1",
+              "scripts": [
+                "./scripts/disable-updates.ps1",
+                "./scripts/remove-metro-apps.ps1",
+                "./scripts/vs.ps1"
+              ]
+        }
     ],
     "post-processors": [
       {
