@@ -15,7 +15,8 @@
             "disk_size": 61440,
             "floppy_files": [
                 "./answer_files/81/Autounattend.xml",
-                "./scripts/openssh.ps1"
+                "./scripts/openssh.ps1",
+                "./scripts/chocolatey.bat"
             ],
             "vboxmanage": [
                 [
