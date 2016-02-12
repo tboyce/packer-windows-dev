@@ -1,0 +1,36 @@
+{
+    "builders": [
+      {
+            "type": "virtualbox-iso",
+            "iso_url": "./iso/en_windows_8.1_enterprise_with_update_x64_dvd_6054382.iso",
+            "iso_checksum_type": "md5",
+            "iso_checksum": "115d7c4203417e52c09d16b50043b10d",
+            "headless": false,
+            "boot_wait": "2m",
+            "ssh_username": "vagrant",
+            "ssh_password": "vagrant",
+            "ssh_wait_timeout": "4h",
+            "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
+            "guest_os_type": "Windows8_64",
+            "disk_size": 61440,
+            "floppy_files": [
+                "./answer_files/81/Autounattend.xml",
+                "./scripts/openssh.ps1"
+            ],
+            "vboxmanage": [
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--memory",
+                    "4096"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--cpus",
+                    "2"
+                ]
+            ]
+        }
+    ]
+}
