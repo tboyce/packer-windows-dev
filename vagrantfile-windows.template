@@ -5,6 +5,7 @@ Vagrant.configure(2) do |config|
   config.vm.define "vagrant-windows81-dev"
   config.vm.box = "windows_81"
   config.vm.communicator = "winrm"
+  config.vm.box_version = "0.0.1"
 
   # Admin user name and password
   config.winrm.username = "vagrant"
@@ -18,8 +19,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider :virtualbox do |v, override|
       v.gui = true
-      v.customize ["modifyvm", :id, "--memory", 2048]
-      v.customize ["modifyvm", :id, "--cpus", 2]
+      v.customize ["modifyvm", :id, "--memory", 4096]
+      v.customize ["modifyvm", :id, "--cpus", 4]
       v.customize ["modifyvm", :id, "--vram", 32]
       v.customize ["setextradata", "global", "GUI/SuppressMessages", "all" ]
   end

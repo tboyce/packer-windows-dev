@@ -64,7 +64,7 @@
     <SelectableItemCustomization Id="ToolsForWin81_WP80_WP81V1" Hidden="no" Selected="no" FriendlyName="Tools and Windows SDKs" />
     <SelectableItemCustomization Id="WindowsPhone81EmulatorsV1" Hidden="no" Selected="no" FriendlyName="Emulators for Windows Phone 8.1" />
     <SelectableItemCustomization Id="GitForWindowsV3" Hidden="no" Selected="no" FriendlyName="Git for Windows" />
-    <SelectableItemCustomization Id="GitHubVSV1" Hidden="no" Selected="no" FriendlyName="GitHub Extension for Visual Studio" />
+    <SelectableItemCustomization Id="GitHubVSV1" Hidden="no" Selected="yes" FriendlyName="GitHub Extension for Visual Studio" />
     <SelectableItemCustomization Id="VS_SDK_GroupV3" Hidden="no" Selected="no" FriendlyName="Visual Studio Extensibility Tools Update 1" />
     <SelectableItemCustomization Id="VS_SDK_Breadcrumb_GroupV3" Selected="no" FriendlyName="Visual Studio Extensibility Tools Update 1" />
     <SelectableItemCustomization Id="Win10_VSToolsV4" Hidden="no" Selected="no" FriendlyName="Tools for Universal Windows Apps (1.2) and Windows 10 SDK (10.0.10586)" />

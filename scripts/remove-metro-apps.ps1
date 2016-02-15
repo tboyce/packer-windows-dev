@@ -45,3 +45,10 @@ Remove-AppxPackage -Package Microsoft.WindowsSoundRecorder_6.3.9600.20280_x64__8
 Remove-AppxPackage -Package Microsoft.XboxLIVEGames_2.0.139.0_x64__8wekyb3d8bbwe
 Remove-AppxPackage -Package Microsoft.ZuneMusic_2.6.320.0_x64__8wekyb3d8bbwe
 Remove-AppxPackage -Package Microsoft.ZuneVideo_2.6.344.0_x64__8wekyb3d8bbwe
+
+# remove links for unremovable apps
+Remove-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows Store.lnk' -Force
+Remove-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Camera.lnk' -Force
+Remove-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Immersive Control Panel.lnk' -Force
+Remove-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PhotosApp.lnk' -Force
+Remove-Item 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\FileManager.lnk' -Force

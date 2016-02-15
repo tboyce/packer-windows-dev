@@ -1,98 +1,111 @@
 {
-    "builders": [
-      {
-            "type": "virtualbox-iso",
-            "iso_url": "./iso/windows/en_windows_8.1_enterprise_with_update_x64_dvd_6054382.iso",
-            "iso_checksum_type": "md5",
-            "iso_checksum": "115d7c4203417e52c09d16b50043b10d",
-            "headless": false,
-            "boot_wait": "2m",
-            "ssh_username": "vagrant",
-            "ssh_password": "vagrant",
-            "ssh_wait_timeout": "4h",
-            "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
-            "guest_os_type": "Windows8_64",
-            "disk_size": 61440,
-            "floppy_files": [
-                "./answer_files/81/Autounattend.xml",
-                "./answer_files/vs/AdminDeployment.xml",
-                "./config/oracle-cert.cer",
-                "./scripts/openssh.ps1",
-                "./scripts/chocolatey.bat"
-            ],
-            "vboxmanage": [
-                [
-                    "modifyvm",
-                    "{{.Name}}",
-                    "--memory",
-                    "4096"
-                ],
-                [
-                    "modifyvm",
-                    "{{.Name}}",
-                    "--cpus",
-                    "2"
-                ],
-                [
-                    "storagectl",
-                    "{{.Name}}",
-                    "--name",
-                    "SataController",
-                    "--add",
-                    "sata",
-                    "--controller",
-                    "IntelAHCI"
-                ],
-                [
-                    "storageattach",
-                    "{{.Name}}",
-                    "--storagectl",
-                    "SataController",
-                    "--port",
-                    "0",
-                    "--device",
-                    "0",
-                    "--type",
-                    "dvddrive",
-                    "--medium",
-                    "./iso/other/en_visual_studio_enterprise_2015_x86_x64_dvd_6850497.iso"
-                ]
-            ]
-        }
-    ],
-    "provisioners": [
-      {
-          "type": "file",
-          "source": "./config",
-          "destination": "/tmp"
-      },
-      {
-            "type": "shell",
-            "remote_path": "/tmp/script.bat",
-            "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
-            "scripts": [
-                "./scripts/vm-guest-tools.bat",
-                "./scripts/enable-rdp.bat",
-                "./scripts/misc-packages.bat"
-            ]
-        },
-        {
-              "type": "shell",
-              "remote_path": "/tmp/script.ps1",
-              "execute_command": "{{.Vars}} powershell -File c:/Windows/Temp/script.ps1",
-              "scripts": [
-                "./scripts/disable-updates.ps1",
-                "./scripts/remove-metro-apps.ps1",
-                "./scripts/vs.ps1"
-              ]
-        }
-    ],
-    "post-processors": [
-      {
-        "type": "vagrant",
-        "keep_input_artifact": true,
-        "output": "windows81-dev-{{.Provider}}.box",
-        "vagrantfile_template": "vagrantfile-windows.template"
-      }
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "iso_url": "./iso/en_windows_8.1_enterprise_with_update_x64_dvd_6054382.iso",
+      "iso_checksum_type": "md5",
+      "iso_checksum": "115d7c4203417e52c09d16b50043b10d",
+      "headless": false,
+      "boot_wait": "2m",
+      "ssh_username": "vagrant",
+      "ssh_password": "vagrant",
+      "ssh_wait_timeout": "4h",
+      "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
+      "guest_os_type": "Windows8_64",
+      "disk_size": 61440,
+      "floppy_files": [
+        "./answer_files/81/Autounattend.xml",
+        "./answer_files/vs/AdminDeployment.xml",
+        "./config/oracle-cert.cer",
+        "./scripts/openssh.ps1",
+        "./scripts/chocolatey.bat"
+      ],
+      "vboxmanage": [
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--memory",
+          "4096"
+        ],
+        [
+          "modifyvm",
+          "{{.Name}}",
+          "--cpus",
+          "4"
+        ],
+        [
+          "storagectl",
+          "{{.Name}}",
+          "--name",
+          "SataController",
+          "--add",
+          "sata",
+          "--controller",
+          "IntelAHCI"
+        ],
+        [
+          "storageattach",
+          "{{.Name}}",
+          "--storagectl",
+          "SataController",
+          "--port",
+          "0",
+          "--device",
+          "0",
+          "--type",
+          "dvddrive",
+          "--medium",
+          "./iso/en_visual_studio_enterprise_2015_x86_x64_dvd_6850497.iso"
+        ]
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "file",
+      "source": "./config",
+      "destination": "/tmp"
+    },
+    {
+      "type": "shell",
+      "remote_path": "/tmp/script.bat",
+      "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
+      "scripts": [
+        "./scripts/vm-guest-tools.bat",
+        "./scripts/enable-rdp.bat",
+        "./scripts/install-packages.bat"
+      ]
+    },
+    {
+      "type": "shell",
+      "remote_path": "/tmp/script.ps1",
+      "execute_command": "{{.Vars}} powershell -File c:/Windows/Temp/script.ps1",
+      "scripts": [
+        "./scripts/disable-updates.ps1",
+	    "./scripts/disable-defender.ps1",
+        "./scripts/remove-metro-apps.ps1",
+        "./scripts/install-vs.ps1",
+        "./scripts/pin-tools.ps1"
+      ]
+    },
+    {
+      "type": "shell",
+      "remote_path": "/tmp/script.bat",
+      "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
+      "scripts": [
+        "./scripts/install-resharper.bat",
+        "./scripts/compile-dotnet-assemblies.bat",
+        "./scripts/cleanup.bat",
+        "./scripts/compact.bat"
+      ]
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "keep_input_artifact": false,
+      "output": "windows81-dev-{{.Provider}}.box",
+      "vagrantfile_template": "vagrantfile-windows.template"
+    }
   ]
 }
