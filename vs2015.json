@@ -68,11 +68,6 @@
       "destination": "/tmp"
     },
     {
-      "type": "file",
-      "source": "./scripts",
-      "destination": "/tmp"
-    },
-    {
       "type": "shell",
       "remote_path": "/tmp/script.bat",
       "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
