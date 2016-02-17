@@ -2,74 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfe22750-3079-49dc-ba02-87c58c52d165" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/cleanup.ps1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/compile-dotnet-assemblies.ps1" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/dism.bat" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/cleanup.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/compile-dotnet-assemblies.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/disable-defender.ps1" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/install-resharper.bat" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/enable-rdp.bat" afterPath="$PROJECT_DIR$/scripts/enable-rdp.ps1" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/install-packages.bat" afterPath="$PROJECT_DIR$/scripts/install-packages.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/oracle-cert.cer" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/oracle-cert.cer" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/microsoft-updates.bat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/restart.ps1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/win-updates.ps1" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/Delete-ComputerRestorePoint.ps1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scripts/restart.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/windows81-min.json" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/.gitignore" afterPath="$PROJECT_DIR$/iso/packer-windows/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/CHANGELOG.md" afterPath="$PROJECT_DIR$/iso/packer-windows/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/LICENSE" afterPath="$PROJECT_DIR$/iso/packer-windows/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/README-rsync.md" afterPath="$PROJECT_DIR$/iso/packer-windows/README-rsync.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/README.md" afterPath="$PROJECT_DIR$/iso/packer-windows/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/10/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/10/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2008_r2/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2008_r2/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2008_r2_core/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2008_r2_core/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2_core/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2_core/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2_hyperv/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/2012_r2_hyperv/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/7/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/7/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/answer_files/81/Autounattend.xml" afterPath="$PROJECT_DIR$/iso/packer-windows/answer_files/81/Autounattend.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/iso/README.md" afterPath="$PROJECT_DIR$/iso/packer-windows/iso/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/.gitignore" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/chef.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/chef.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/chocolatey.ps1" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/chocolatey.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/compact.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/compact.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/compile-dotnet-assemblies.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/compile-dotnet-assemblies.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/disable-auto-logon.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/disable-auto-logon.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/enable-rdp.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/enable-rdp.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/fixnetwork.ps1" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/fixnetwork.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/hotfix-KB2842230.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/hotfix-KB2842230.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/microsoft-updates.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/microsoft-updates.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/openssh.ps1" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/openssh.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/puppet-enterprise.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/puppet-enterprise.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/puppet.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/puppet.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/rsync.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/rsync.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/salt.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/salt.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/vagrant-ssh.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/vagrant-ssh.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/vm-guest-tools.bat" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/vm-guest-tools.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/scripts/win-updates.ps1" afterPath="$PROJECT_DIR$/iso/packer-windows/scripts/win-updates.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_10.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_10.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2008_r2.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2008_r2.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2012.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2012.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2012_r2.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_2012_r2.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_7.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_7.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_81.template" afterPath="$PROJECT_DIR$/iso/packer-windows/vagrantfile-windows_81.template" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_10.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_10.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2008_r2.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2008_r2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2008_r2_core.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2008_r2_core.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2012.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2012.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2_core.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2_core.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2_hyperv.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_2012_r2_hyperv.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_7.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_7.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iso/packer-windows/windows_81.json" afterPath="$PROJECT_DIR$/iso/packer-windows/windows_81.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/disable-updates.ps1" afterPath="$PROJECT_DIR$/scripts/disable-updates.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/install-vs.ps1" afterPath="$PROJECT_DIR$/scripts/install-vs.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/pin-tools.ps1" afterPath="$PROJECT_DIR$/scripts/pin-tools.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/remove-metro-apps.ps1" afterPath="$PROJECT_DIR$/scripts/remove-metro-apps.ps1" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/restart.bat" afterPath="$PROJECT_DIR$/scripts/restart.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/windows81-min.json" afterPath="$PROJECT_DIR$/windows81-min.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/answer_files/81/Autounattend.xml" afterPath="$PROJECT_DIR$/answer_files/81/Autounattend.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/cleanup.ps1" afterPath="$PROJECT_DIR$/scripts/cleanup.ps1" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/install-packages.ps1" afterPath="$PROJECT_DIR$/scripts/install-packages.ps1" />
     </list>
     <ignored path="packer-windows-dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,71 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="windows81-min.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/windows81-min.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.777778">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="restart.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/restart.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openssh.ps1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/openssh.ps1">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vm-guest-tools.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/vm-guest-tools.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="compact.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/compact.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dism.bat" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/dism.bat">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="install-packages.ps1" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/install-packages.ps1">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -165,27 +47,67 @@
         <entry file="file://$PROJECT_DIR$/scripts/cleanup.ps1">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15025042">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Delete-ComputerRestorePoint.ps1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Delete-ComputerRestorePoint.ps1">
+      <file leaf-file-name="enable-rdp.ps1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/enable-rdp.ps1">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Autounattend.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/answer_files/81/Autounattend.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-21.576923">
+              <caret line="234" column="37" selection-start-line="234" selection-start-column="37" selection-end-line="234" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compact.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/compact.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.851852">
+              <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="win-updates.ps1" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/win-updates.ps1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.1269035">
+              <caret line="213" column="37" selection-start-line="213" selection-start-column="37" selection-end-line="213" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vs2015.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vs2015.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="43.653847">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="microsoft-updates.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/microsoft-updates.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.9259257">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -200,9 +122,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/vagrantfile-windows.template" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scripts/install-resharper.ps1" />
-        <option value="$PROJECT_DIR$/scripts/install-packages.ps1" />
         <option value="$PROJECT_DIR$/scripts/cleanup.bat" />
         <option value="$PROJECT_DIR$/scripts/compile-dotnet-assemblies.bat" />
         <option value="$PROJECT_DIR$/scripts/enable-rdp.ps1" />
@@ -213,9 +133,18 @@
         <option value="$PROJECT_DIR$/scripts/install-vs.ps1" />
         <option value="$PROJECT_DIR$/scripts/openssh.ps1" />
         <option value="$PROJECT_DIR$/scripts/dism.ps1" />
-        <option value="$PROJECT_DIR$/scripts/restart.bat" />
-        <option value="$PROJECT_DIR$/scripts/cleanup.ps1" />
         <option value="$PROJECT_DIR$/windows81-min.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/scripts/restart.bat" />
+        <option value="$PROJECT_DIR$/scripts/microsoft-updates.bat" />
+        <option value="$PROJECT_DIR$/scripts/win-updates.ps1" />
+        <option value="$PROJECT_DIR$/scripts/install-packages.ps1" />
+        <option value="$PROJECT_DIR$/scripts/delete-restore-point.ps1" />
+        <option value="$PROJECT_DIR$/scripts/disable-restore.ps1" />
+        <option value="$PROJECT_DIR$/scripts/enable-restore.ps1" />
+        <option value="$PROJECT_DIR$/scripts/cleanup.ps1" />
+        <option value="$PROJECT_DIR$/answer_files/81/Autounattend.xml" />
+        <option value="$PROJECT_DIR$/vs2015.json" />
       </list>
     </option>
   </component>
@@ -225,10 +154,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="y" value="24" />
-    <option name="width" value="960" />
-    <option name="height" value="1032" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -361,41 +290,26 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
-      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-      <module name="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
@@ -410,6 +324,18 @@
       <command value="run-script" />
       <scripts />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
       <method />
     </configuration>
   </component>
@@ -427,27 +353,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="24" width="960" height="1032" extended-state="4" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26855895" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26817703" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3372591" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -467,10 +394,58 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/windows81-min.json">
+    <entry file="file://$PROJECT_DIR$/scripts/openssh.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/vm-guest-tools.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compact.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dism.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/install-packages.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/cleanup.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -495,7 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -503,7 +477,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -539,14 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/windows81-min.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/cleanup.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -563,26 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/windows81-min.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/windows81-min.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -650,42 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vagrantfile-windows.template">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5569061">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/answer_files/81/Autounattend.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.181617">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/enable-rdp.ps1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/remove-metro-apps.ps1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/pin-tools.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -693,7 +610,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,6 +617,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compile-dotnet-assemblies.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/dism.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -713,10 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/compile-dotnet-assemblies.ps1">
+    <entry file="file://$PROJECT_DIR$/scripts/remove-metro-apps.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="36" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+          <caret line="0" column="39" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -737,39 +675,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/install-packages.ps1">
+    <entry file="file://$PROJECT_DIR$/vagrantfile-windows.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state vertical-scroll-proportion="-17.62963">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/dism.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="54" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Delete-ComputerRestorePoint.ps1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/compact.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/restart.bat">
+    <entry file="file://$PROJECT_DIR$/scripts/restart.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
@@ -777,26 +691,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/install-packages.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/enable-rdp.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/compact.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.851852">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/cleanup.ps1">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/windows81-min.json">
+    <entry file="file://$PROJECT_DIR$/answer_files/81/Autounattend.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.777778">
-          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+        <state vertical-scroll-proportion="-21.576923">
+          <caret line="234" column="37" selection-start-line="234" selection-start-column="37" selection-end-line="234" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/vs2015.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15025042">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="43.653847">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/microsoft-updates.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9259257">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/win-updates.ps1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="6.1269035">
+          <caret line="213" column="37" selection-start-line="213" selection-start-column="37" selection-end-line="213" selection-end-column="37" />
           <folding />
         </state>
       </provider>

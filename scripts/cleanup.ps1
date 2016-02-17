@@ -1,7 +1,5 @@
 Write-Host "Cleaning up"
 
-. c:\windows\temp\scripts\Delete-ComputerRestorePoint.ps1
-
 Push-Location "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\VolumeCaches\"
 Set-ItemProperty -Path "Active Setup Temp Folders" -Name StateFlags0100 -Value 2 -Type DWord -Force
 Set-ItemProperty -Path "BranchCache" -Name StateFlags0100 -Value 2 -Type DWord -Force
@@ -35,8 +33,6 @@ Set-ItemProperty -Path "Windows ESD installation files" -Name StateFlags0100 -Va
 Set-ItemProperty -Path "Windows Upgrade Log Files" -Name StateFlags0100 -Value 2 -Type DWord -Force
 Pop-Location
 
-cleanmgr /sagerun:100
+Start-Process cleanmgr /sagerun:100 -Wait
 
 Remove-Item C:\Windows\Temp\* -Recurse -Force
-
-Get-ComputerRestorePoint | Delete-ComputerRestorePoint

@@ -12,7 +12,7 @@ choco install -y jre8
 choco install -y notepadplusplus.install
 choco install -y linqpad4
 choco install -y NugetPackageExplorer
-choco install -y reflector
+choco install -y dotpeek
 choco install -y beyondcompare
 choco install -y git-credential-manager-for-windows
 choco install -y processhacker

@@ -6,7 +6,6 @@
       "iso_checksum_type": "md5",
       "iso_checksum": "115d7c4203417e52c09d16b50043b10d",
       "headless": false,
-      "boot_wait": "2m",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_wait_timeout": "4h",
@@ -18,7 +17,9 @@
         "./answer_files/vs/AdminDeployment.xml",
         "./config/oracle-cert.cer",
         "./scripts/openssh.ps1",
-        "./scripts/chocolatey.bat"
+        "./scripts/chocolatey.bat",
+        "./scripts/microsoft-updates.bat",
+        "./scripts/win-updates.ps1"
       ],
       "vboxmanage": [
         [
@@ -87,15 +88,19 @@
         "./scripts/enable-rdp.ps1",
         "./scripts/disable-updates.ps1",
         "./scripts/remove-metro-apps.ps1",
-        "./scripts/cleanup.ps1"
+        "./scripts/install-vs.ps1",
+        "./scripts/install-packages.ps1",
+        "./scripts/pin-tools.ps1",
+        "./scripts/cleanup.ps1",
+        "./scripts/restart.ps1"
       ]
     },
     {
       "type": "shell",
       "remote_path": "/tmp/script.bat",
       "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
+      "pause_before": "30s",
       "scripts": [
-        "./scripts/restart.bat",
         "./scripts/dism.bat",
         "./scripts/compact.bat"
       ]
@@ -105,7 +110,7 @@
     {
       "type": "vagrant",
       "keep_input_artifact": false,
-      "output": "windows81-dev-{{.Provider}}.box",
+      "output": "vs2015-{{.Provider}}.box",
       "vagrantfile_template": "vagrantfile-windows.template"
     }
   ]
