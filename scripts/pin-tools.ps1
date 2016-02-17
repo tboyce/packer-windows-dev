@@ -1,3 +1,5 @@
+Write-Host "Pinning Tools"
+
 $sa = new-object -c shell.application
 
 $pn = $sa.namespace('C:\tools\cmder\').parsename('Cmder.exe')

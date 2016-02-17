@@ -1,3 +1,5 @@
+Write-Host "Disabling Automatic Updates"
+
 <#
 .SYNOPSIS
    Disables automatic windows updates

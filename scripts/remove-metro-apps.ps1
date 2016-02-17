@@ -1,3 +1,5 @@
+Write-Host "Removing Windows Store Apps"
+
 # Remove staged apps
 Remove-AppxProvisionedPackage -PackageName Microsoft.BingFinance_2014.926.253.3184_neutral_~_8wekyb3d8bbwe -Online
 Remove-AppxProvisionedPackage -PackageName Microsoft.BingFoodAndDrink_2014.926.254.3803_neutral_~_8wekyb3d8bbwe -Online
