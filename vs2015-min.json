@@ -18,9 +18,7 @@
         "./scripts/install-vs2015.ps1",
         "./config/oracle-cert.cer",
         "./scripts/openssh.ps1",
-        "./scripts/chocolatey.bat",
-        "./scripts/microsoft-updates.bat",
-        "./scripts/win-updates.ps1"
+        "./scripts/chocolatey.bat"
       ],
       "vboxmanage": [
         [
@@ -79,20 +77,13 @@
         "./scripts/enable-rdp.ps1",
         "./scripts/disable-updates.ps1",
         "./scripts/remove-metro-apps.ps1",
-        "./scripts/cleanup.ps1"
-      ]
-    },
-    {
-      "type": "shell",
-      "remote_path": "/tmp/script.ps1",
-      "execute_command": "{{.Vars}} powershell -File c:/Windows/Temp/script.ps1",
-      "scripts": [
+        "./scripts/cleanup.ps1",
         "./scripts/restart.ps1"
       ]
     },
     {
       "type": "shell",
-      "pause_before": "2m",
+      "pause_before": "30s",
       "remote_path": "/tmp/script.bat",
       "execute_command": "{{.Vars}} cmd /c C:/Windows/Temp/script.bat",
       "scripts": [

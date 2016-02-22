@@ -1,0 +1,17 @@
+{
+  "name": "tboyce/vs2015",
+  "description": "This box contains Visual Studio 2015.",
+  "versions": [
+    {
+      "version": "0.1.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "vs2015-virtualbox.box",
+          "checksum_type": "sha1",
+          "checksum": "db4735524e8c8c04a4d73967725dc286798bacb6"
+        }
+      ]
+    }
+  ]
+}

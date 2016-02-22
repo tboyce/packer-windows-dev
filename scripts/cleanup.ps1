@@ -33,6 +33,10 @@ Set-ItemProperty -Path "Windows ESD installation files" -Name StateFlags0100 -Va
 Set-ItemProperty -Path "Windows Upgrade Log Files" -Name StateFlags0100 -Value 2 -Type DWord -Force
 Pop-Location
 
+Write-Host "Running disk cleanup"
+
 Start-Process cleanmgr /sagerun:100 -Wait
+
+Write-Host "Clearing temp directory"
 
 Remove-Item C:\Windows\Temp\* -Recurse -Force
